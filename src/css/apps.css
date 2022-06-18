@@ -128,13 +128,11 @@ ul {
 .row-right {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
   flex: 1 1 0;
 }
 .row-center {
   width: 100%;
   display: flex;
-  justify-content: center;
   flex: 10 1 0;
 }
 .row-left {
