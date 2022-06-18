@@ -4,10 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/index.css" />
+    <link rel="stylesheet" href="src/css/background.css" />
+    <link rel="stylesheet" href="src/css/apps.css" />
+
     <title>momentum</title>
   </head>
   <body>
-    <h1>start</h1>
-    <script src="js/weather.js"></script>
+    <div class="main">
+      <div class="backgrounds">
+        <div class="background">
+          <div class="background-item"></div>
+        </div>
+        <div class="background-overlay"></div>
+      </div>
+      <div class="apps">
+        <div class="top-row">
+          <div class="row-left">
+            <div id="weather" class="weather-wrapper">
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="center-row">
+          <div class="region center-above clock">
+            <span id="realtime-clock"></span>
+          </div>
+          <div class="region center-center title">
+            <h1 id="login-title" class="hidden">What is your name ?</h1>
+            <h1 id="greeting" class="hidden"></h1>
+          </div>
+          <div class="region center-below submit-wrapper todos">
+            <form id="login-form" class="hidden">
+              <input required maxlength="15" type="text" />
+            </form>
+            <form id="todo-question" class="hidden">
+              <input type="text" placeholder="Write a To Do and Press Enter" required></input>
+            </form>
+            <ul id="todo-list" class="hidden"></ul>
+          </div>
+        </div>
+        <div class="bottom-row">
+          <div class="bottom row-right info"></div>
+          <div class="bottom row-center quotes">
+            <p id="quote"></p>
+            <p id="author" class=""></p>
+          </div>
+          <div class="bottom row-left"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./src/js/module.js"></script>
+    <script type="module" src="./src/js/background.js"></script>
+    <script type="module" src="./src/js/clock.js"></script>
+    <script type="module" src="./src/js/greeting.js"></script>
+    <script type="module" src="./src/js/quotes.js"></script>
+    <script type="module" src="./src/js/todos.js"></script>
+    <script type="module" src="./src/js/weather.js"></script>
   </body>
 </html>

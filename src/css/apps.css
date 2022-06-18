@@ -1,0 +1,145 @@
+.apps {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 4rem;
+}
+
+.top-row {
+  height: 6rem;
+  display: flex;
+  align-items: flex-start;
+  flex: 0 0 auto;
+}
+
+.center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: auto;
+}
+
+.bottom-row {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.region {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center-above,
+.clock {
+  flex: 1 1 50%;
+  justify-content: flex-end;
+}
+.center-center {
+  flex: 1 1 50%;
+  max-width: 100%;
+}
+.center-below {
+  flex: 1 1 100%;
+}
+
+#realtime-clock {
+  font-size: 15rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.title h1 {
+  font-size: 8rem;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.quotes {
+  max-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.quotes p {
+  text-align: center;
+  font-size: 2.5rem;
+  word-break: keep-all;
+}
+
+.quotes p:last-child {
+  visibility: hidden;
+  opacity: 0;
+  height: 0%;
+  font-style: italic;
+  transition: all 0.3s;
+}
+
+.submit-wrapper {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.submit-wrapper form {
+  max-width: 80rem;
+}
+
+#login-form input {
+  font-size: 6rem;
+}
+
+#todo-question input {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+ul {
+  width: 100%;
+  max-width: 60rem;
+  max-height: 30vh;
+  overflow: overlay;
+  margin: 1rem;
+  margin-top: 3rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(45, 45, 45, 0.478);
+}
+
+#weather {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  align-items: flex-end;
+}
+
+#weather span {
+}
+
+.row-right {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex: 1 1 0;
+}
+.row-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex: 10 1 0;
+}
+.row-left {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 0;
+}
